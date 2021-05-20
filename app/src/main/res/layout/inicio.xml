@@ -31,13 +31,12 @@
             android:textSize="42dp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_margin="30px"
             android:background="#4E74BF"
-            android:text="Alarmas"
-            android:onClick="Alarmas"/>
+            android:text="Recordatorios"/>
 
         <Button
             android:id="@+id/button2"

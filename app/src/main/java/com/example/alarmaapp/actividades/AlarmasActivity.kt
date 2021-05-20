@@ -17,10 +17,12 @@ import com.example.alarmaapp.modelos.Alarma
 import com.example.alarmaapp.utils.AlarmasUtils
 import java.util.*
 
-const val COD_CREAR_ALARMA = 354
+
 
 class AlarmasActivity : AppCompatActivity(), AlarmasAdapter.OnHabilitarAlarmaListener,
     AlarmasAdapter.OnLongClickAlarmaListener {
+
+    val COD_CREAR_ALARMA = 354
 
     var contNoHayAlarmas: LinearLayout? = null
     var recyclerAlarmas: RecyclerView? = null
