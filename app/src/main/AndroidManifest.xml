@@ -11,13 +11,15 @@
         android:theme="@style/AppTheme">
         <activity android:name=".actividades.CrearAlarmaActivity"></activity>
         <activity android:name=".actividades.AlarmasActivity"></activity>
+        <activity android:name=".actividades.QuizActivity"></activity>
 
         <receiver
             android:name=".receivers.AlarmaReceiver"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".actividades.MainActivity">
+        <activity android:name=".actividades.MainActivity"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
