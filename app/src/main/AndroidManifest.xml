@@ -9,19 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".actividades.PreguntasQuizActivity"></activity>
+        <activity android:name=".actividades.ResultActivity"></activity>
+        <activity android:name=".actividades.PreguntasQuizActivity" />
         <activity android:name=".actividades.CrearAlarmaActivity" />
         <activity android:name=".actividades.AlarmasActivity" />
-        <activity android:name=".actividades.QuizActivity"
-            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".actividades.QuizActivity"
+            android:windowSoftInputMode="adjustResize" />
 
         <receiver
             android:name=".receivers.AlarmaReceiver"
             android:enabled="true"
             android:exported="true" />
 
-        <activity
-            android:name=".actividades.MainActivity">
+        <activity android:name=".actividades.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
