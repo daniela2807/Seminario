@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".actividades.ResultActivity"></activity>
+        <activity android:name=".actividades.PreguntasQuiz3Activity"></activity>
+        <activity android:name=".actividades.PreguntasQuiz2Activity" />
+        <activity android:name=".actividades.CategoriasActivity" />
+        <activity android:name=".actividades.ResultActivity" />
         <activity android:name=".actividades.PreguntasQuizActivity" />
         <activity android:name=".actividades.CrearAlarmaActivity" />
         <activity android:name=".actividades.AlarmasActivity" />

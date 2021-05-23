@@ -20,7 +20,7 @@ class QuizActivity: AppCompatActivity() {
                 Toast.makeText(this,
                 "INGRESA TU NOMBRE", Toast.LENGTH_SHORT).show()
             }else {
-                val intent = Intent(this, PreguntasQuizActivity::class.java)
+                val intent = Intent(this, CategoriasActivity::class.java)
                 intent.putExtra(Constantes.USER_NAME, et_nombre.text.toString())
                 startActivity(intent)
                 finish()

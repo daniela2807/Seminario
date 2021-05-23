@@ -5,15 +5,13 @@ import android.graphics.Color
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.TextView
-import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.example.alarmaapp.R
 import kotlinx.android.synthetic.main.activity_preguntas_quiz.*
 
-class PreguntasQuizActivity : AppCompatActivity(), View.OnClickListener {
+class PreguntasQuiz2Activity : AppCompatActivity(),  View.OnClickListener {
 
     private var mCurrentPosition:Int = 1
     private var mPreguntasList: ArrayList<Pregunta>? = null
@@ -23,11 +21,11 @@ class PreguntasQuizActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_preguntas_quiz)
+        setContentView(R.layout.activity_preguntas_quiz2)
 
         mUsername = intent.getStringExtra(Constantes.USER_NAME)
 
-        mPreguntasList = Constantes.getPreguntasCategoria1()
+        mPreguntasList = Constantes.getPreguntasCategoria2()
         //Log.i("Total de preguntas:", "${preguntasList.size}")
         setQuestion()
 
@@ -100,13 +98,13 @@ class PreguntasQuizActivity : AppCompatActivity(), View.OnClickListener {
                         mCurrentPosition <= mPreguntasList!!.size ->{
                             setQuestion()
                         }else -> {
-                            val intent = Intent(this, ResultActivity::class.java)
-                            intent.putExtra(Constantes.USER_NAME, mUsername)
-                            intent.putExtra(Constantes.CORRECT_ANSWERS, mCorrectAnswers)
-                            intent.putExtra(Constantes.TOTAL_QUESTIONS, mPreguntasList!!.size)
-                            startActivity(intent)
-                            finish()
-                        }
+                        val intent = Intent(this, ResultActivity::class.java)
+                        intent.putExtra(Constantes.USER_NAME, mUsername)
+                        intent.putExtra(Constantes.CORRECT_ANSWERS, mCorrectAnswers)
+                        intent.putExtra(Constantes.TOTAL_QUESTIONS, mPreguntasList!!.size)
+                        startActivity(intent)
+                        finish()
+                    }
                     }
                 }else{
                     val pregunta = mPreguntasList?.get(mCurrentPosition -1)
