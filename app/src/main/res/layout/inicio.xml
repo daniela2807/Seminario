@@ -40,17 +40,6 @@
             app:srcCompat="@drawable/cerebro2" />
 
         <Button
-            android:id="@+id/button1"
-            android:layout_width="380dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="30px"
-            android:background="#7529AF94"
-            android:fontFamily="casual"
-            android:text="Recordatorios"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <Button
             android:id="@+id/button2"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
@@ -58,6 +47,17 @@
             android:background="#99A5F427"
             android:fontFamily="casual"
             android:text="Quiz Memoria"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"
+            android:background="#7529AF94"
+            android:fontFamily="casual"
+            android:text="Recordatorios"
             android:textSize="20sp"
             android:textStyle="bold" />
 
