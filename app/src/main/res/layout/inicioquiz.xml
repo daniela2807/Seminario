@@ -81,4 +81,15 @@
 
     </androidx.cardview.widget.CardView>
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="Nota: Escribe Hola si no recuerda tu nommbre"
+        android:textColor="#650303"
+        android:textSize="16sp" />
+
 </LinearLayout>

@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         val btn_inicio_quiz = findViewById(R.id.button2) as Button
 
         btn_click_me.setOnClickListener {
-            Toast.makeText(this@MainActivity, "You clicked me.", Toast.LENGTH_SHORT).show()
+           // Toast.makeText(this@MainActivity, "You clicked me.", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, AlarmasActivity::class.java).apply {
             }
             startActivity(intent)

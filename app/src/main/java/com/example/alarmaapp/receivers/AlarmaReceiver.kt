@@ -15,7 +15,7 @@ class AlarmaReceiver : BroadcastReceiver() {
 
         NotificacionesUtils.lanzarNotificacion(
             context,
-            titulo = "¡¡¡Alarma de ${ intent.extras?.getString(AlarmasUtils.Extras.HORA) } !!!"
+            titulo = "¡¡¡Recordatorio de ${ intent.extras?.getString(AlarmasUtils.Extras.HORA) } !!!"
         )
 
     }
